@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #070F2B;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #3C5B6F;
+}
+
+.navbar img {
+    width: auto;
+    height: 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.popular-topics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.popular-topics h2 {
+    margin: 0;
+}
+
+.arrow-buttons {
+    display: flex;
+}
+
+.arrow-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.arrow-buttons button:hover {
+    color: #557a8f;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: hidden;
+    padding: 20px;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.card {
+    min-width: calc(33.33% - 20px);
+    height: calc(33.33vh - 20px);
+    margin-right: 20px;
+    background-color: #1B3C73;
+    border: 1px solid #c7e0f1;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    /* Arrange card content vertically */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    /* Arrange image and text side by side */
+}
+
+.card img {
+    width: 15%;
+    /* Decrease the width of the image */
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    padding: 5px;
+    /* Adjust the padding */
+}
+
+
+.card-body {
+    padding: 20px;
+    width: 50%;
+    /* Take half of the card's width */
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    padding: 0 20px;
+    margin-top: auto;
+    text-align: center;
+    /* Push button to the bottom of the card */
+}
+
+.btn {
+    background-color: #1B3C73;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    border: none;
+    border: 2px solid #c7e0f1;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.btn:hover {
+    background-color: #557a8f;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+    .popular-topics {
+        padding: 10px;
+    }
+    .card-container {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .card {
+        min-width: calc(50% - 20px);
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .card img {
+        width: 30%;
+    }
+    .card-body {
+        width: 70%;
+    }
+}

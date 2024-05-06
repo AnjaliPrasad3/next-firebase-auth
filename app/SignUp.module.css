@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-half {
+    flex: 1;
+    background-image: url('./images/mountainGirl.png');
+    background-size: cover;
+}
+
+.right-half {
+    flex: 1;
+    background-color: #070F2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.signup-box {
+    background-color: #070F2B;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"],
+#google-signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a5463;
+    color: #fff;
+    border: 1px solid #c7e0f1;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.or-separator {
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+.or-separator span {
+    /* background-color: #fff; */
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.or-separator:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.icon{
+    width: 20px;
+    height: auto;
+    padding-right: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-half {
+        flex: none;
+        height: 300px; /* Adjust height as needed */
+    }
+    .right-half {
+        flex: none;
+        height: auto;
+        padding: 20px;
+    }
+}
